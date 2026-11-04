@@ -1,0 +1,33 @@
+# Python environments and cache
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local Streamlit secrets and environment variables
+.streamlit/secrets.toml
+.env
+.env.*
+
+# Logs and temporary SQLite sidecar files
+*.log
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Local build artifacts
+dist/
+build/
+*.egg-info/
+
+# Local working notes
+INSTRUCTION.md

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: brewery-geographic-analysis
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-deploy.txt
+    startCommand: streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.headless true
+    healthCheckPath: /_stcore/health
+    envVars:
+      # Memory settings for a 512 MB instance, measured with tools/memory_probe.py (see DEPLOYMENT.md).
+      # pyarrow serializes every table sent to the browser; its jemalloc pool hands memory back far better than the
+      # default mimalloc pool: six visitors at once need about 415 MB instead of 530 MB.
+      - key: ARROW_DEFAULT_MEMORY_POOL
+        value: jemalloc
+      # Fewer glibc malloc arenas: Streamlit runs every session in its own thread.
+      - key: MALLOC_ARENA_MAX
+        value: "2"

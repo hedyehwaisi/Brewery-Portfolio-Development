@@ -1,0 +1,6 @@
+# Runtime dependencies required by the Streamlit dashboard. SciPy and scikit-learn are not needed: the
+# statistics that use them are precomputed (brewery_dashboard_statistics.ipynb -> data/dashboard_stats.db).
+numpy~=2.5.3
+pandas~=3.0.6
+streamlit~=1.65.0
+plotly~=7.1.0
