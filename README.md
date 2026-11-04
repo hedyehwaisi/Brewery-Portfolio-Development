@@ -6,7 +6,7 @@ clustering and a simple probability model say about where breweries gather and w
 appear. Everything is reproducible from the SQLite files in `data/`, and the results live in a multi-page Streamlit
 dashboard.
 
-- **Live dashboard:** https://brewery-portfolio-development.onrender.com/
+- **Live dashboard:** https://brewery-dashboard.onrender.com/
 - **Repository:** https://github.com/hedyehwaisi/Brewery-Portfolio-Development
 - **Data source:** [Open Brewery DB](https://www.openbrewerydb.org/), plus [GeoNames](https://www.geonames.org)
   (CC BY 4.0) and [OpenStreetMap](https://www.openstreetmap.org/copyright) Nominatim (ODbL) for capitals and city centers
