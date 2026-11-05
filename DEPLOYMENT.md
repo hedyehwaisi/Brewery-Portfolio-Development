@@ -183,4 +183,5 @@ pushing:
 3. Keep the SQLite files: the dashboard and the tests need them. GitHub warns above 50 MB per file and refuses
    100 MB; `clustering_results.db` is about 30 MB.
 4. Respect the data licences: Open Brewery DB, GeoNames (CC BY 4.0) and OpenStreetMap Nominatim (ODbL) are credited in
-   the README, and `reference_places.db` records its sources in the `sources` table.
+`NOTICE.md`, `data/LICENSE.md`, the README and the dashboard sidebar, and `reference_places.db` records its sources in
+the `sources` table.

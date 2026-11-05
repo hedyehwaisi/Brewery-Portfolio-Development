@@ -72,6 +72,13 @@ def pick_dataset():
 # states/provinces and cities as you zoom in.
 BASEMAPS = {"OpenStreetMap": "open-street-map", "CARTO Positron (light grey)": "carto-positron"}
 
+# Data and basemap credits required by the upstream licences (MIT, CC BY 4.0, ODbL, CARTO basemap terms).
+# Shown in the sidebar of every page through pick_basemap(); the repository holds the full text in NOTICE.md.
+CREDITS = ("Data: [Open Brewery DB](https://www.openbrewerydb.org/) (MIT) · [GeoNames](https://www.geonames.org) "
+           "(CC BY 4.0) · © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL) · "
+           "© [CARTO](https://carto.com/attributions). Analysis © 2026 Hedyeh Waisi, "
+           "[MIT / CC BY 4.0](https://github.com/hedyehwaisi/Brewery-Portfolio-Development).")
+
 
 def pick_basemap():
     """Sidebar basemap switch. The choice is kept in session state so it follows the user across pages."""
@@ -81,6 +88,7 @@ def pick_basemap():
                               help="OpenStreetMap shows roads, parks and water in colour; CARTO Positron is a quiet "
                                    "grey map. Markers carry a dark ring so they stay visible on either.")
     st.session_state["basemap"] = choice
+    st.sidebar.caption(CREDITS)
     return BASEMAPS[choice]
 
 
