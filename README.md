@@ -233,8 +233,20 @@ comparison and how Docker fits.
 ├── requirements.txt / requirements-deploy.txt / render.yaml / DEPLOYMENT.md
 ```
 
-## License
+## License and citation
 
-No license is asserted yet. Before adding one, check the terms of the bundled data: Open Brewery DB's own terms,
-GeoNames (CC BY 4.0, attribution required) and OpenStreetMap (ODbL, attribution and share-alike for derived
-databases).
+- **Code** (`*.py`, `pages/`, `tests/`, `tools/`, notebook code cells): [MIT](LICENSE), Copyright (c) 2026 Hedyeh Waisi.
+- **Text, figures and analysis** (this README, `docs/`, notebook prose, dashboard explanations and charts):
+  [CC BY 4.0](LICENSE-DOCS.md). Reuse is allowed with credit to the author and a link to this repository.
+- **Data** (`data/`): see [data/LICENSE.md](data/LICENSE.md). Brewery records come from
+  [Open Brewery DB](https://www.openbrewerydb.org/) (MIT); capitals and city centers from
+  [GeoNames](https://www.geonames.org) (CC BY 4.0) and [OpenStreetMap](https://www.openstreetmap.org/copyright)
+  Nominatim (ODbL, © OpenStreetMap contributors). `reference_places.db` is offered under ODbL 1.0.
+- **Third-party notices**: [NOTICE.md](NOTICE.md) reproduces the upstream licences and the credits that must stay
+  with every copy, including the basemap credits (© OpenStreetMap contributors, © CARTO).
+
+**Citing this work.** GitHub shows a "Cite this repository" button built from [CITATION.cff](CITATION.cff). Plain form:
+
+> Waisi, H. (2026). *Brewery Portfolio Development: geographic analysis, spatial clustering and location prediction
+> for Open Brewery DB* (Version 1.0.0) [Software and data]. GitHub.
+> https://github.com/hedyehwaisi/Brewery-Portfolio-Development
