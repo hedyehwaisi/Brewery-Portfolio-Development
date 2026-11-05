@@ -28,7 +28,7 @@ A few things the data taught me:
 The lesson I'll keep: a larger cluster or a higher share of clustered points does not make a better model. The map
 has to agree.
 
-Live dashboard: https://brewery-portfolio-development.onrender.com/
+Live dashboard: https://brewery-dashboard.onrender.com/
 Code and notebooks: https://github.com/hedyehwaisi/Brewery-Portfolio-Development
 
 Feedback is very welcome.
