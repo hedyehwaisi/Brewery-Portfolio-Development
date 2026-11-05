@@ -1,0 +1,59 @@
+# Citation metadata (Citation File Format 1.2.0). GitHub reads this file and shows a
+# "Cite this repository" button with APA and BibTeX entries. Validate changes with
+# `pip install cffconvert && cffconvert --validate`.
+cff-version: 1.2.0
+message: "If you use this code, data or analysis, please cite it as below."
+type: software
+title: "Brewery Portfolio Development: geographic analysis, spatial clustering and location prediction for Open Brewery DB"
+authors:
+  - family-names: Waisi
+    given-names: Hedyeh
+    email: waisihedyeh@gmail.com
+version: 1.0.0
+date-released: 2026-11-04
+repository-code: "https://github.com/hedyehwaisi/Brewery-Portfolio-Development"
+url: "https://brewery-dashboard.onrender.com/"
+license: MIT
+keywords:
+  - breweries
+  - open-brewery-db
+  - geographic-analysis
+  - spatial-clustering
+  - dbscan
+  - hdbscan
+  - optics
+  - kernel-density-estimation
+  - streamlit
+  - plotly
+  - data-quality
+abstract: >-
+  A reproducible analysis of an Open Brewery DB snapshot (11,959 brewery records): data quality
+  and duplicate checks, coordinate corrections, geographic distribution across countries, states
+  and cities, density-based spatial clustering (DBSCAN, HDBSCAN, OPTICS) with full parameter
+  grids, and a probability model for where the next brewery is likely to open. Results are stored
+  in SQLite and presented in a multi-page Streamlit dashboard. Code is MIT licensed; text and
+  figures are CC BY 4.0; bundled data keeps the terms of Open Brewery DB (MIT), GeoNames
+  (CC BY 4.0) and OpenStreetMap (ODbL).
+references:
+  - type: database
+    title: "Open Brewery DB"
+    authors:
+      - name: "Open Brewery DB"
+    url: "https://www.openbrewerydb.org/"
+    repository-code: "https://github.com/openbrewerydb/openbrewerydb"
+    license: MIT
+    notes: "Brewery records fetched from the public API."
+  - type: database
+    title: "GeoNames geographical database"
+    authors:
+      - name: "GeoNames"
+    url: "https://www.geonames.org"
+    license: CC-BY-4.0
+    notes: "Capitals and city center points (cities500, admin1CodesASCII, admin2Codes, countryInfo)."
+  - type: database
+    title: "OpenStreetMap"
+    authors:
+      - name: "OpenStreetMap contributors"
+    url: "https://www.openstreetmap.org/copyright"
+    license: ODbL-1.0
+    notes: "Nominatim geocoding for 68 city centers and reverse-geocoded evidence; basemap tiles."
